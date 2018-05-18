@@ -8,10 +8,18 @@
 </head>
 
 <body>
-    <div id="upperBar">
-        <span id="nameLabel">Nombre : </span>
-        <span id="name"></span>
+    <h2>¿Quieres jugar?</h2>
+    <button type="button" onclick="document.write('Genial comencemos')">Click me!</button>
+
+    <h2>Ingresa tu nombre</h2>
+    <div>
+        <input type="text" id="name">
+        <input type="submit" onclick="siguiente()" value="siguiente">
+        <div id="contUser"></div>
+
     </div>
+
+
     <div id="scoreBoard">
         <div id="rightAnswers">
             <h2>Respuestas correctas</h2>
