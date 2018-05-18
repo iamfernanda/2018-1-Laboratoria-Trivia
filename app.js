@@ -1,6 +1,8 @@
-window.onload = function() {
-    var name = prompt("¿cuál es tu nombre?");
-    document.getElementById("name").innerText = name;
+function Siguiente() {
+    var name= document.getElementById('name').value;
+    console.log(name)
+    document.getElementById('contUser').innerHTML = '<p>' + 'Bienvenida '+ name + '</p>';
+}
 
     var wantToPlay = prompt("¿quieres jugar? s/n");
     if (wantToPlay.toLowerCase() == "s") {
