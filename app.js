@@ -1,4 +1,5 @@
-var name= document.getElementById('name');
+var name= document.getElementById('name').value;
+var contUser= document.getElementById('contUser');
 function accept() {
     document.getElementById('wannaPlay').style.display='none';
     var wannaPlay= document.getElementById("wannaPlay");
@@ -16,17 +17,13 @@ function siguiente() {
    document.getElementById('contUser').innerHTML = '<p>' + ' Bienvenida '+ name + '</p>';
 }
 
-if("name" == 'none') {
-  document.getElementById('name').style.display='none'
-}
 
 
 
 
-
-    var wantToPlay = prompt("¿quieres jugar? s/n");
+    var wantToPlay = ("¿quieres jugar? s/n");
     if (wantToPlay.toLowerCase() == "s") {
-        var answer1 = prompt("¿han egresado hombres en Laboratoria? s/n");
+        var answer1 = ("¿han egresado hombres en Laboratoria? s/n");
         if (answer1.toLowerCase() == "n") {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
@@ -41,7 +38,7 @@ if("name" == 'none') {
             "</div>";
         }
 
-        var answer2 = prompt("¿hay laboratoria en concepción? s/n");
+        var answer2 = ("¿hay laboratoria en concepción? s/n");
         if (answer2.toLowerCase() == "n") {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +

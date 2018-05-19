@@ -17,38 +17,64 @@
     color: white;
 }
 
-.login {
-    width: 300px;
-    height: 450px;
-    background:#423b3d;
-  margin: 30px auto;
-    border-radius: 50px;
-  }
-  
-  .login .form {
-    width: 100%;
-    height: 100%;
-    padding: 15px 20px;;
-  }
-  
-  .login .form h2 {
-    color: #FFF;
-    text-align: center;
-    font-weight: normal;
-    font-size: 20px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-  
-  }
-  
-  .login .form submit {
-    width: 30%;
-    height: 40px;
-    border: 1px solid rgba(255,255,255,.1);
-    padding: 0px 15px;
-    border-radius: 10px;
-    float: right;
-    margin-right: 35px;
-  }
-  
+#wannaPlay {
+  position:absolute;
+		bottom: 200px;
+		left: 400px;
+  color: rgb(34, 8, 16);
+  background-color: rgb(70, 198, 221);
+  width:30%;
+  height: 30%;
+  padding: 40px 40px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+#button {
+  background: rgb(211, 90, 150);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    transition-duration: .7s;
+    margin-top: 15px;
+}
+
+#button:hover {
+  background: white;
+  border: 2px solid rgb(214, 93, 208);
+  color: black;
+  cursor: pointer;
+}
+
+#userName {
+  position:absolute;
+		bottom: 400px;
+		right: 90px;
+   color: lightblue;
+   background-color: lightsalmon;
+   width: 20%;
+   height: 30%;
+   padding: 20px 20px;
+   text-align: left;
+   border-radius: 30px;
+ }
+ #contUser{
+   color: black;
+   font-size: 180%;
+ }
+
+ #quiz {
+   color: #5179a0;
+   background-color: lavenderblush;
+   width: 35%;
+   height:100%;
+   padding: 20px 30px;
+   text-align: left;
+   border-radius: 30px;
+   border: 10px solid rgb(127, 181, 235);
+   font-size: 25px;
+ }
   
