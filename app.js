@@ -1,8 +1,28 @@
-function Siguiente() {
+var name= document.getElementById('name');
+function accept() {
+    document.getElementById('wannaPlay').style.display='none';
+    var wannaPlay= document.getElementById("wannaPlay");
+    
+    if(wannaPlay.style.display =="none"){
+        document.getElementById('userName').style.display='none';
+       } else {
+           
+       }
+    }
+    
+function siguiente() {
     var name= document.getElementById('name').value;
     console.log(name)
-    document.getElementById('contUser').innerHTML = '<p>' + 'Bienvenida '+ name + '</p>';
+   document.getElementById('contUser').innerHTML = '<p>' + ' Bienvenida '+ name + '</p>';
 }
+
+if("name" == 'none') {
+  document.getElementById('name').style.display='none'
+}
+
+
+
+
 
     var wantToPlay = prompt("¿quieres jugar? s/n");
     if (wantToPlay.toLowerCase() == "s") {
@@ -38,4 +58,3 @@ function Siguiente() {
     } else {
         document.getElementById("warningMessage").innerText = "Bueno Chao";
     }
-}

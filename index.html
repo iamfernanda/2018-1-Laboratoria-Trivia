@@ -8,19 +8,32 @@
 </head>
 
 <body>
-        <div class="login">
-                <div class="form">
+        
+    <div id="wannaPlay"> 
     <h2>¿Quieres jugar?</h2>
-    <button type="button" onclick="document.write('Genial comencemos')">Click me!</button>
+    <button type="button"  id="button" onclick="accept()">Si</button>
+    <button type="button" onclick="document.write('Bueno chao')">No</button></div>
 
+
+    <div id="userName">
     <h2>Ingresa tu nombre</h2>
-    <div>
-        <input type="text" id="name">
-        <input type="submit" onclick="siguiente()" value="siguiente">
+        <input type="text" id="name"/>
+        <input type="submit" onclick="siguiente()" value="siguiente"/>
         <div id="contUser"></div>
-        </div>
-        </div>
+    </div>
+        
 
+        <form id="quiz" name="quiz">
+                <p class="questions">¿La tierra es plana?</p>
+                <input type="radio" id="mc" name="question2" value="Tangananica"> equisde si<br>
+                <input type="radio" id="mc" name="question2" value="Tanganana"> no<br>
+        
+                <p class="questions">¿Papas fritas o completo?</p>
+                <input type="radio" id="mc" name="question3" value="Papas fritas"> Papas fritas<br>
+                <input type="radio" id="mc" name="question3" value="Completo"> Completo<br>
+                <input type="radio" id="mc" name="question3" value="Papaspleto"> Papaspleto<br>
+        
+        </form>
     </div>
 
 
